@@ -47,31 +47,6 @@ p {
   transition: color 0.3s ease;
 }
 
-/* Animação para valores de temperatura e umidade */
-#temperatura span,
-#umidade span {
-  display: inline-block;
-  animation: fadeIn 0.5s ease-in-out, popUp 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes popUp {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 /* Loader */
 .esconder {
   display: none;

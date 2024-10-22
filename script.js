@@ -5,12 +5,10 @@ const elementoTemperatura = document.querySelector("#temperatura span");
 const elementoUmidade = document.querySelector("#umidade span");
 const carregando = document.querySelector("#carregando");
 
-// Função para mostrar/ocultar o loader
 const alternarCarregando = () => {
   carregando.classList.toggle("esconder");
 };
 
-// Função para obter os dados do clima
 const obterDadosClima = async (cidade) => {
   alternarCarregando();
   
@@ -24,7 +22,6 @@ const obterDadosClima = async (cidade) => {
   return dados;
 };
 
-// Função para exibir os dados do clima
 const mostrarDadosClima = async (cidade) => {
   const dados = await obterDadosClima(cidade);
 
@@ -37,12 +34,12 @@ const mostrarDadosClima = async (cidade) => {
   elementoUmidade.innerText = `${dados.main.humidity}`;
 };
 
-// Atualiza os dados de São João dos Patos ao carregar a página
 window.addEventListener("load", () => {
   mostrarDadosClima(cidadeFixa);
 
-  // Atualizar a cada 10 minutos (600.000 milissegundos)
   setInterval(() => {
     mostrarDadosClima(cidadeFixa);
   }, 300000);
 });
+
+
