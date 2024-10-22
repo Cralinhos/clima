@@ -1,53 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>clima</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - São João dos Patos</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
     <div class="container">
-        <div class="form">
-            <h3>Confira o clima de uma cidade</h3>
-            <div class="form-input-container">
-                <input type="text" placeholder="Digite o nome da cidade" id="city-input" />
-                <button id="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-        </div>
-        <div id="weather-data" class="hide">
-            <h2><span id="city"></span> <nav id="country"></nav></h2>
-            <p id="temperature"><span></span>&deg;C</p>
-            <div id="description-container">
-                <p id="description"></p>
-                <img id="weather-icon" src="" alt="Condições atuais">
-            </div>
-            <div id="details-container">
-                <p id="umidity">
-                    <i class="fa-solid fa-droplet"></i>
-                    <span></span>
-                </p>
-                <p id="wind">
-                    <i class="fa-solid fa-wind"></i>
-                    <span></span>
-                </p>
-            </div>
-        </div>
-        <div id="error-message" class="hide">
-            <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
-        </div>
-        <div id="loader" class="hide">
-            <i class="fa-solid fa-spinner"></i>
-        </div>
-        <div id="suggestions">
-        </div>
+        <h2>São João dos Patos</h2>
+        <p id="temperatura"><span></span>&deg;C</p>
+        <p id="umidade">Umidade: <span></span>%</p>
+        <div id="carregando" class="esconder">Carregando...</div>
     </div>
 </body>
-
 </html>
