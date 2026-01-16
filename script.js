@@ -1,4 +1,4 @@
-const chaveAPI = "3e4eb591a2ee5dcaf4bfb2d517413ca3";
+const chaveAPI = "58bfef138ac0599440da64cdfbd06b78";
 const cidadeFixa = "São João dos Patos";
 
 const elementoTemperatura = document.querySelector("#temperatura span");
